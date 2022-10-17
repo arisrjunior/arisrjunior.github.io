@@ -4,18 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ari's portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        h1 {
+            font-size: 35px;
+            color: #343740;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 25px;
+            color: #46464c;
+        }
+
+        h3{
+            font-size: 20px;
+            color: #212225;
+        }
+
+        p {
+            font-size: 16px;
+            color: #212225;
+        }
+
+        .index{
+            line-height: 80px;
+            color: #212225;
+        }
+
+        .list {
+            line-height: 50px;
+            color: #212225;
+        }
+        .picture1 {
+            border-radius: 70px;
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
     <h1>Hello, World! <br>My name is Ari Soares Ramos Júnior</h1>
 
-    <h3>This is my portfolio!</h3>
+    <h2>This is my portfolio!</h2>
 
-    <p>This is me</p>
+    <h3>Contents</h3>
 
-    <img src="./images/Foto2.jpg" alt="FotoAri" width="400">
+    <ul class="index">
+        <li><a href="#foto">My picture</a></li>
+        <li><a href="#infome">A litle about me</a></li>
+        <li><a href="#abilities">My abilities</a></li>
+        <li><a href="https://www.linkedin.com/in/ari-soares-ramos-j%C3%BAnior-b35903222/"><img class="icon" src="data:image/png;base64,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" alt="linkedin" width="35px"></a></li>
+        <li><a href="https://github.com/arisrjunior"><img class="icon" src="data:image/png;base64,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" alt="github" width="35px"></a></li>
+    </ul>
 
-    <p>My name is Ari, I was born in november 23, 1994, in Belo Horizonte, Minas Gerais, Brazil. <br>I'm currently studying to become a fullstack web developer in Trybe! And I'm really looking foward to ger my first job in this area! <br> I've worked in many different fields during my proffessional life, like: 
+    <h3>This is me</h3>
+
+    <img class="picture1" id = "foto" src="./images/Foto2.jpg" alt="FotoAri" width="400">
+
+    <p id="infome">My name is Ari, I was born in november 23, 1994, in Belo Horizonte, Minas Gerais, Brazil. <br>I'm currently studying to become a fullstack web developer in Trybe! And I'm really looking foward to ger my first job in this area! <br> I've worked in many different fields during my proffessional life, like: 
     <ul>
         <li>I've worked in my fathers woodwork company since my 16s. <br>
         in there I've learned about every single area of the company, from building closets myself to administration!</li>
@@ -24,8 +79,8 @@
     </ul>
     </p>
 
-    <p>My abilities are: <br>
-        <ul>
+    <h3 id="abilities">My abilities are: <br> </h3>
+        <ul class="list">
             <li> <strong>I'm a fast learner</strong></li>
             <li>I'm good with people</li>
             <li>I'm good a solving problems</li>
@@ -33,6 +88,6 @@
             <li>I'm a decent english speaker</li>
             <li><strong>I'm good at logic</strong></li>
         </ul>
-    </p>
+   
 </body>
 </html>
